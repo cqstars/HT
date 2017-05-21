@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace DI
+namespace IDAL
 {
-    public class Class1
+    public interface IDBSessionFactory
     {
+        IDBSession GetDBSession();
     }
 }

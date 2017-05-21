@@ -8,6 +8,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02BLL", "02BLL", "{B545AC9C-5D63-4E88-BB16-129C0113F2BE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03DAL", "03DAL", "{3E94C289-CC04-4A0B-B050-7D1AABF4A6D1}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\gaodeng\Gaodeng\DALSQL\BaseDAL.cs = ..\..\..\gaodeng\Gaodeng\DALSQL\BaseDAL.cs
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04Common", "04Common", "{BA6A1E89-7C7E-4406-86CD-AE2D5E403A0A}"
 EndProject
