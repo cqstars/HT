@@ -46,6 +46,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BLLA.tt</DependentUpon>
     </Compile>
+    <Compile Include="BLLAExtention\UserDB.cs" />
     <Compile Include="BLLSession.cs" />
     <Compile Include="BLLSessionExtension.cs">
       <AutoGen>True</AutoGen>
@@ -55,6 +56,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{57efcebc-115a-4b60-bb76-2b033e11bdf0}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DI\DI.csproj">
       <Project>{c11b0d55-bb41-48aa-b48e-0524822ef9d0}</Project>
       <Name>DI</Name>

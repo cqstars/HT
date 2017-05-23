@@ -57,6 +57,10 @@
       <Project>{34d35f93-2d63-4b3a-86e9-6efbdff7434c}</Project>
       <Name>Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WebUI.Helper\WebUI.Helper.csproj">
+      <Project>{1eefc9c3-4ce2-49d3-954c-10dcd9690af0}</Project>
+      <Name>WebUI.Helper</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

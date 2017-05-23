@@ -15,6 +15,8 @@ namespace Model
     public partial class VipUserPermission
     {
         public int VipID { get; set; }
+        public Nullable<int> VipUserID { get; set; }
+        public Nullable<int> VipPerMissionID { get; set; }
         public string Remark { get; set; }
         public Nullable<bool> IsDel { get; set; }
         public Nullable<System.DateTime> AddTime { get; set; }

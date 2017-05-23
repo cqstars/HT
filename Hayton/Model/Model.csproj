@@ -55,6 +55,9 @@
     <Compile Include="Department.cs">
       <DependentUpon>HT.tt</DependentUpon>
     </Compile>
+    <Compile Include="PocoModel\Permission.cs" />
+    <Compile Include="PocoModel\UseDB.cs" />
+    <Compile Include="FormatModel\AjaxMsgModel.cs" />
     <Compile Include="HT.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -86,19 +89,20 @@
     <Compile Include="UserRole.cs">
       <DependentUpon>HT.tt</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\LoginUser.cs" />
     <Compile Include="VipUserPermission.cs">
       <DependentUpon>HT.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DTOModel\" />
-    <Folder Include="FormatModel\" />
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="HT.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>HT.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="App.Config" />
     <None Include="HT.edmx.diagram">
       <DependentUpon>HT.edmx</DependentUpon>
     </None>

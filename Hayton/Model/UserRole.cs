@@ -15,6 +15,8 @@ namespace Model
     public partial class UserRole
     {
         public int UserRoleID { get; set; }
+        public Nullable<int> UserID { get; set; }
+        public Nullable<int> RoleID { get; set; }
         public Nullable<bool> IsDel { get; set; }
         public Nullable<System.DateTime> AddTime { get; set; }
     

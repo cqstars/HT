@@ -26,6 +26,18 @@ namespace WebUI
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+            bundles.Add(new ScriptBundle("~/MVCAjax").Include("~/Scripts/jquery-3.1.0.js",
+              "~/Scripts/jquery.unobtrusive-ajax.js",
+              "~/Scripts/jquery.validate.js",
+              "~/Scripts/jquery.validate.unobtrusive.js",
+              "~/Scripts/jquery.msgProcess.js"));
+            bundles.Add(new ScriptBundle("~/BootStrap/js").Include("~/Scripts/jquery-3.1.1.min.js", "~/Scripts/bootstrap.min.js",
+                 "~/Scripts/jquery.unobtrusive-ajax.min.js",
+                "~/Scripts/jquery.validate.js",
+                "~/Scripts/jquery.validate.unobtrusive.min.js",
+                "~/Scripts/msgProcess.js"));
+            bundles.Add(new StyleBundle("~/BootStarp/CSS").Include("~/Content/bootstrap.min.css", "~/Content/bootstrap-theme.min.css", "~/Content/MyStely.css"));
+            BundleTable.EnableOptimizations = true;
         }
     }
 }

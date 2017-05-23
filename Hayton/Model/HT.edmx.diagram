@@ -5,20 +5,20 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="7db40403ece448569fb0cff301eba310" Name="Diagram1">
-        <EntityTypeShape EntityType="HTModel.Department" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
-        <EntityTypeShape EntityType="HTModel.Permission" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
-        <EntityTypeShape EntityType="HTModel.RolePermission" Width="1.5" PointX="5.25" PointY="12.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="HTModel.Role" Width="1.5" PointX="3" PointY="14.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="HTModel.UserDB" Width="1.5" PointX="3" PointY="2" IsExpanded="true" />
-        <EntityTypeShape EntityType="HTModel.UserRole" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="HTModel.VipUserPermission" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
-        <AssociationConnector Association="HTModel.FK_UserDB_DepartMent" ManuallyRouted="false" />
-        <AssociationConnector Association="HTModel.FK_RolePermissions_Permission" ManuallyRouted="false" />
-        <AssociationConnector Association="HTModel.FK_VipUserPermission_Permission" ManuallyRouted="false" />
-        <AssociationConnector Association="HTModel.FK_RolePermissions_Roles" ManuallyRouted="false" />
-        <AssociationConnector Association="HTModel.UserRole_Roles" ManuallyRouted="false" />
-        <AssociationConnector Association="HTModel.FK_VipUserPermission_UserDB" ManuallyRouted="false" />
-        <AssociationConnector Association="HTModel.UserRole_UserDB" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="HTModel.Department" Width="1.5" PointX="0.75" PointY="3.25" />
+        <EntityTypeShape EntityType="HTModel.Permission" Width="1.5" PointX="6" PointY="7.75" />
+        <EntityTypeShape EntityType="HTModel.RolePermission" Width="1.5" PointX="8.25" PointY="8.75" />
+        <EntityTypeShape EntityType="HTModel.Role" Width="1.5" PointX="3" PointY="8.5" />
+        <EntityTypeShape EntityType="HTModel.UserDB" Width="1.5" PointX="3" PointY="1.125" />
+        <EntityTypeShape EntityType="HTModel.UserRole" Width="1.5" PointX="5.25" PointY="2.875" />
+        <EntityTypeShape EntityType="HTModel.VipUserPermission" Width="1.5" PointX="8.25" PointY="2.75" />
+        <AssociationConnector Association="HTModel.FK_UserDB_DepartMent" />
+        <AssociationConnector Association="HTModel.FK_RolePermissions_Permission" />
+        <AssociationConnector Association="HTModel.FK_VipUserPermission_Permission" />
+        <AssociationConnector Association="HTModel.FK_RolePermissions_Roles" />
+        <AssociationConnector Association="HTModel.UserRole_Roles" />
+        <AssociationConnector Association="HTModel.FK_VipUserPermission_UserDB" />
+        <AssociationConnector Association="HTModel.UserRole_UserDB" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

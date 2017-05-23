@@ -15,6 +15,8 @@ namespace Model
     public partial class RolePermission
     {
         public int RolePerMissionID { get; set; }
+        public Nullable<int> RoleID { get; set; }
+        public Nullable<int> PermissionID { get; set; }
         public Nullable<bool> IsDel { get; set; }
         public Nullable<System.DateTime> AddTime { get; set; }
         public Nullable<int> DepartMentID { get; set; }
