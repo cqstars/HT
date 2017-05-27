@@ -11,9 +11,9 @@ namespace Model.ViewModel
     /// </summary>
     public class LoginUser
     {
-        [Required]
+        [Required (ErrorMessage = "用户不能为空")]
         public string LoginName { get; set; }
-        [Required]
+        [Required(ErrorMessage ="密码不能为空")]
         public string Pwd { get; set; }
         public bool IsAlways { get; set; }
     }

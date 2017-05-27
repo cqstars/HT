@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminController.cs" />
+    <Compile Include="Filter\LoginValidateAttribute.cs" />
     <Compile Include="HayTnAdminAreaRegistration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

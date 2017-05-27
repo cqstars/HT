@@ -34,7 +34,7 @@ namespace HayTnAdmin
         {
           
             //1.2服务器端验证，如果没有验证通过
-            if (!ModelState.IsValid)
+            if (!ModelState.IsValid )
             {
                 return OperateContext.Current.RedirectAjax("err", "没有权限!", null, "");
             }

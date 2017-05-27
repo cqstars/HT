@@ -20,7 +20,7 @@ namespace WebUI.Helper
         const string Admin_TreeString = "aTreeString";
         const string Admin_LogicSessionKey = "BLLSession";
         //-------------------------0定义字段Http,Usr,和UserPermission--------------------------------------------------------------------------------------------------------
-        #region 0.1 Http上下文 及 相关属性
+        #region 0.1 Http上下文 Response和Request
         /// <summary>
         /// Http上下文
         /// </summary>
@@ -102,7 +102,7 @@ namespace WebUI.Helper
             BLLSession = DI.SpringHelper.GetObject<IBLL.IBLLSession>("BLLSession");
         }
         #endregion
-        #region 1.2 通过OprateContext的静态字段Current获得其OperatteContext本身   + OperateContext Current
+        #region 1.2 通过OprateContext的静态字段Current获得其OperatteContext本身(放入线程）   + OperateContext Current
         /// <summary>
         /// 获取当前 操作上下文 (为每个处理浏览器请求的服务器线程 单独创建 操作上下文)
         /// </summary>
@@ -271,6 +271,7 @@ namespace WebUI.Helper
         /// <summary>
         /// 重定向方法 有两种情况：如果是Ajax请求，则返回 Json字符串；如果是普通请求，则 返回重定向命令
         /// </summary>
+        /// <param name="url">重定向地址</param> <param name="action">访问的方法</param>
         /// <returns></returns>
         public ActionResult Redirect(string url, ActionDescriptor action)
         {
