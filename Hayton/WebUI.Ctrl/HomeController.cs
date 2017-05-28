@@ -14,5 +14,10 @@ namespace WebUI.Ctrl
             ViewData["user"]= user;
             return View();
         }
+
+        public ActionResult UserLogin()
+        {
+            return View();
+        }
     }
 }

@@ -1,13 +1,13 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - 我的 ASP.NET 应用程序</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-
+    <title>@ViewBag.Title海顿物联网管理系统</title>
+    @Styles.Render("~/BootStarp/CSS")
+    @Scripts.Render("~/BootStrap/js")
+    <script src="~/Scripts/iconfont.js"></script>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -18,7 +18,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("应用程序名称", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <a class="navbar-brand" href="/"><svg class="icon" style="vertical-align: -0.55em;" aria-hidden="true">
+    <use xlink:href="#icon-icon-test1"></use>
+</svg>海顿物联网管理系统</a>
+
+                @*@Html.ActionLink("海顿物联网管理系统", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -33,13 +37,65 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
+
         <footer>
-            <p>&copy; @DateTime.Now.Year - 我的 ASP.NET 应用程序</p>
+
+            <div class="row">
+                <div class="col-md-12">
+
+
+                </div>
+                <div class="col-md-6">
+                    <address>
+                        <svg class="icon text-danger" aria-hidden="true">
+                            <use xlink:href="#icon-diqiu"></use>
+                        </svg> <strong>重庆海顿科技有限公司 </strong><br>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-shouji"></use>
+                        </svg>
+                        <abbr title="Phone">联系人：向先生&nbsp;&nbsp;手机：1363-7777-865</abbr><br>
+                        <svg class="icon text-primary" aria-hidden="true">
+                            <use xlink:href="#icon-dianhua"></use>
+                        </svg> 电话： 023-传真：023-<br />
+
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-youjian"></use>
+                        </svg><a href="mailto:#">20634529@qq.com</a><br />
+                        <svg class="icon text-success" aria-hidden="true">
+                            <use xlink:href="#icon-dizhi"></use>
+                        </svg>重庆市九龙坡区石桥铺华宇名都29号楼
+                    </address>
+
+
+                </div>
+                <div class="col-md-6">
+                    <!--底部导航-->
+                    <div class="row text-center">
+                        <ul class="list-inline">
+
+
+                            <!--<li><a href="javascript{void(0)}"><i class="iconfont text-info">&#xe610;</i></a></li>
+                            <li><a href="javascript{void(0)}"><i class="iconfont text-danger">&#xe611;</i></a></li>
+                            <li><a href="javascript{void(0)}"><i class="iconfont text-primary">&#xe60f;</i></a></li>-->
+                            <li></li>
+                        </ul>
+
+
+                        <p>Copyright©&nbsp;&nbsp;All Rights Reserved&nbsp;&nbsp;<a href="http://www.cqgdbg.com/">海顿科技</a></p>
+                        <p>渝ICP备12002506号-5</p>
+                        <!--<a href="javascript{void(0)}"></a>-->
+                    </div>
+                    <!--底部导航-->
+
+
+
+                </div>
+            </div>
+
         </footer>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+
     @RenderSection("scripts", required: false)
 </body>
 </html>
